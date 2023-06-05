@@ -2,6 +2,6 @@
  
  This is react app is created with ```npm create vite@latest```
  
- Run this ```npm run dev``` to start localhot
+ Run this ```npm run dev``` to start localhost
  
  ![screenshot](./screenshot.png)
