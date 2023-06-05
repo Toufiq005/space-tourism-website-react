@@ -1,0 +1,610 @@
+/* ======================Utils====================== */
+
+.con {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.bar {
+  font-family: "Barlow", sans-serif;
+}
+.bell {
+  font-family: "Bellefair", serif;
+}
+.light {
+  color: #d0d6f9;
+}
+/* ======================Navbar====================== */
+
+.navBg {
+  position: absolute;
+  z-index: 10;
+  width: 254px;
+  height: 667px;
+  right: 0px;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+}
+.closeIcon {
+  position: absolute;
+  top: 34px;
+  right: 34px;
+}
+.tablet-navbar {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.tablet-navbar li {
+  margin: 0 20px 0 20px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  color: #ffffff;
+}
+
+.desk-navbar {
+  width: 830px;
+  height: 96px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  font-size: 18px;
+  color: white;
+  font-family: "Barlow Condensed";
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  nav {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .tablet-navbar {
+    display: flex;
+  }
+}
+@media (min-width: 1280px) {
+  nav {
+    padding-top: 30px;
+  }
+  .desk-navbar {
+    display: flex;
+  }
+  .logo {
+    margin-left: 30px;
+  }
+  .desk-navbar li {
+    margin: 0 40px 0 40px;
+  }
+}
+
+/* ======================Home====================== */
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/home/background-home-mobile.jpg");
+}
+.hero h2 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+}
+
+.hero h1 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100px;
+  text-align: center;
+  color: #ffffff;
+}
+.hero p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #d0d6f9;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background: white;
+}
+.explore p {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  color: #0b0d17;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .home {
+    background-image: url("./assets/home/background-home-tablet.jpg");
+  }
+  .hero h2 {
+    margin-top: 100px;
+  }
+  .hero h1 {
+    margin-top: 10px;
+    font-size: 150px;
+    line-height: 150px;
+  }
+  .hero p {
+    width: 444px;
+    text-align: center;
+  }
+  .explore {
+    width: 242px;
+    height: 242px;
+    margin-bottom: 50px;
+  }
+  .explore p {
+    font-size: 32px;
+    line-height: 37px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .home {
+    background-image: url("./assets/home/background-home-desktop.jpg");
+  }
+  .hero h1 {
+    font-size: 150px;
+    line-height: 172px;
+  }
+  .hero h2 {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+  }
+  .hero p {
+    text-align: start;
+    margin: 0;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .hero-text {
+    width: 450px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .explore {
+    width: 274px;
+    height: 274px;
+  }
+  .explore p {
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+}
+
+/* ======================Destination====================== */
+
+.destination {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(assets/destination/background-destination-mobile.jpg);
+}
+.destination p {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+.destination h1 {
+  margin-top: 20px;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.destination h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #d0d6f9;
+}
+.destination h3 {
+  margin-top: 5px;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.destination h4 {
+  margin-top: 20px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+}
+.img {
+  width: 230px;
+  height: 230px;
+}
+.destinationNav button {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  color: #ffffff;
+}
+.destination button:hover {
+  color: yellow;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .destination {
+    background-image: url("assets/destination/background-destination-tablet.jpg");
+  }
+  .destination p {
+    margin: 40px 0 0 40px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: start;
+  }
+  .img {
+    width: 300px;
+    height: 300px;
+  }
+  .destination h1 {
+    font-size: 80px;
+    line-height: 92px;
+  }
+  .destination h2 {
+    width: 573px;
+  }
+}
+@media (min-width: 1280px) {
+  .destination {
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+  }
+  .destination p {
+    margin: 40px 0 0 60px;
+    text-align: start;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+  }
+  .destination h1 {
+    margin-left: 10px;
+    font-size: 100px;
+    line-height: 115px;
+  }
+  .destination h2 {
+    margin-left: 10px;
+    text-align: start;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .destination h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .destination h4 {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
+  .destination-text {
+    width: 450px;
+  }
+  .img {
+    width: 445px;
+    height: 445px;
+  }
+}
+
+/* =================================Crew================================= */
+
+.crew {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/crew/background-crew-mobile.jpg");
+}
+.crewImgBox {
+  width: 327px;
+  height: 223px;
+  border-bottom: 1px solid #383b4b;
+}
+.crewImg {
+  width: auto;
+  height: 222px;
+}
+.button {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  opacity: 0.17;
+  border-radius: 100%;
+}
+.button:hover {
+  opacity: 1;
+}
+.crew h3 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #d0d6f9;
+}
+.crew h2 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.crew h1 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .crew {
+    background-image: url("./assets/crew/background-crew-tablet.jpg");
+  }
+  .crew p {
+    margin: 40px 0 0 40px;
+    text-align: start;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .crew h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .crew h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .crew h3 {
+    width: 458px;
+    text-align: center;
+  }
+  .crewImg {
+    width: auto;
+    height: 500px;
+  }
+  .crewImgBox {
+    height: inherit;
+  }
+}
+
+@media (min-width: 1280px) {
+  .crew {
+    background-image: url("./assets/crew/background-crew-desktop.jpg");
+  }
+  .crew p {
+    text-align: start;
+    margin: 40px 0 0 60px;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+  }
+  .crew h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .crew h2 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .crew h3 {
+    margin: 0;
+    text-align: start;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .crewImg {
+    width: 550px;
+    height: auto;
+  }
+  .crewImgBox {
+    width: 50%;
+    height: auto;
+  }
+}
+
+/* ======================Technology====================== */
+
+.technology {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("assets/technology/background-technology-mobile.jpg");
+}
+.technology button {
+  font-family: "Bellefair";
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 100%;
+  border: 1px solid rgba(256, 256, 256, 0.5);
+}
+.technology button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(256, 256, 256, 1);
+}
+.technology h1 {
+  margin: 20px 0 20px 0;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.technology h2 {
+  margin-top: 10px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 2.3625px;
+  color: #d0d6f9;
+}
+.technology h3 {
+  margin: 0 20px 0 20px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #d0d6f9;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .technology {
+    background-image: url("assets/technology/background-technology-tablet.jpg");
+  }
+  .technology p {
+    margin: 40px 0 0 20px;
+    text-align: start;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .technology button {
+    width: 60px;
+    height: 60px;
+  }
+  .technology h2 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .technology h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .technology h3 {
+    font-size: 16px;
+    line-height: 28px;
+    width: 458px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .technology {
+    background-image: url("assets/technology/background-technology-desktop.jpg");
+  }
+  .technology p {
+    text-align: start;
+    margin: 40px 0 0 60px;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+  }
+  .technology h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .technology h2 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .technology h3 {
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+    text-align: start;
+  }
+  .technology button {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+  .technology-text {
+    width: 470px;
+    margin: 0 0 0 40px;
+  }
+}
